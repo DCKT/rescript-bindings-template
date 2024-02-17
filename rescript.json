@@ -2,5 +2,10 @@
   "name": "@dck/rescript-bindings-template",
   "uncurried": true,
   "namespace": false,
-  "sources": ["src/js"]
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ]
 }
