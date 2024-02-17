@@ -1,33 +1,47 @@
-# rescript-bindings-template
+# rescript-<module>
 
-NOTE: For versioning & auto npm deploy, add a `NPM_TOKEN` to the repository secrets.
+ReScript bindings for [<module>](https://github.com/X/Y) (targeted version : `~X.X.X`)
 
 ## Setup
 
 1. Install the module
 
 ```bash
-bun install @dck/rescript-x
-```
-
-or
-
-```bash
-yarn install @dck/rescript-x
-```
-
-or
-
-```bash
-npm install @dck/rescript-x
+bun install @dck/rescript-<module>
+# or
+yarn install @dck/rescript-<module>
+# or
+npm install @dck/rescript-<module>
 ```
 
 2. Add it to your `rescript.json` config
 
 ```json
 {
-  "bsc-flags": ["@dck/rescript-x"]
+  "bsc-dependencies": ["@dck/rescript-<module>"]
 }
 ```
 
-## API
+## Usage
+
+The functions can be accessed through `X` module.
+
+## Development
+
+Install deps
+
+```bash
+bun install
+```
+
+Compiles files
+
+```bash
+bun run dev
+```
+
+Run tests
+
+```bash
+bun test
+```

@@ -1,7 +1,7 @@
 {
-  "name": "@dck/rescript-bindings-template",
+  "name": "@dck/rescript-<module>",
   "version": "0.0.0",
-  "description": "",
+  "description": "ReScript bindings for <module>",
   "keywords": [
     "rescript",
     "bindings"
@@ -16,15 +16,20 @@
     "rescript": ">=11.0.0"
   },
   "devDependencies": {
-    "rescript": ">=11.0.0"
+    "@rescript/core": "^1.0.0",
+    "rescript": ">=11.0.0",
+    "rescript-bun": "^0.4.1"
   },
   "scripts": {
     "build": "rescript build",
-    "watch": "rescript build -w",
+    "dev": "rescript build -w",
     "clean": "rescript clean"
   },
   "files": [
     "src/*",
     "rescript.json"
-  ]
+  ],
+  "engines": {
+    "node": ">=18"
+  }
 }
