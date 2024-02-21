@@ -18,7 +18,7 @@ npm install @dck/rescript-<module>
 
 ```json
 {
-  "bsc-dependencies": ["@dck/rescript-<module>"]
+  "bs-dependencies": ["@dck/rescript-<module>"]
 }
 ```
 
